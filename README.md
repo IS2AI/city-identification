@@ -14,10 +14,41 @@ $ git clone https://github.com/IS2AI/city-classification-and-index-prediction
 
 # Pre-processing 
 
-To generate patches out of raw images, and to perform train-val-test split launch the following script:
+Prior to training it is necessary to perform pre-processing on raw images. To generate patches out of raw images needed for training, and to perform train-val-test split launch the following script:
 
 ```
 python3 preprocessing.py
 ```
 
+# Training
+
+To launch training for city classification use the following script:
+```
+python3 train_classification.py
+```
+
+Similarly, to launch training for city index predition use:
+```
+python3 train_regression.py
+```
+
+# Inference
+
+For testing out city classificaiton model performance on unseen patches run:
+```
+python3 test_classification.py
+```
+
+Similarly, to test city index prediciton on unseen patches run:
+```
+python3 test_regression.py
+```
+
+# Sustainability map creation
+
+To create sustainability color map, there is a available another script:
+
+```
+python3 make_sustainability_map.py
+```
 
