@@ -31,7 +31,7 @@ from sklearn.metrics import r2_score
 
 # read sustainability index csv
 
-df = pd.read_csv('workspace/dataset/sustainability_index.csv', index_col='city')
+df = pd.read_csv('city_indexes/sustainability_index.csv', index_col='city')
 df['overall'] /= 100               # overall / planet / people / profit
 scores = df['overall'].to_dict()
 scores
@@ -85,7 +85,7 @@ t = transforms.Compose([
 
 
 # get paths to the images
-test_paths = list(paths.list_files('workspace/dataset/reg_240/test', validExts='jpg'))
+test_paths = list(paths.list_files('preprocessed/patches/test', validExts='jpg'))
 
 # load the dataset
 test_set = CityDataset(test_paths, scores, transform=t)
@@ -245,7 +245,6 @@ for key in city_indexes:
 city_codes = []
 
 for key in city_means.keys():
-    #city_codes.append(df.index[df['planet'] == key / 100].tolist()[0].split('(')[-1][:-1])
     city_codes.append(df.index[df['overall'] == key / 100].tolist()[0])
 
 
@@ -273,10 +272,6 @@ plt.ylabel('Index 1 (best) to 100 (worst)', **csfont)
 plt.title('Sustainability scores for the test set (overall)', **csfont)
 plt.legend()
 plt.savefig('index_overall_resnet101.png')
-
-
-# In[ ]:
-
 
 
 

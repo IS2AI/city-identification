@@ -40,8 +40,8 @@ t = transforms.Compose([
     ])
 
 
-train_set = datasets.ImageFolder('workspace/dataset/v9_240/train', transform=t)
-val_set = datasets.ImageFolder('workspace/dataset/v9_240/val', transform=t)
+train_set = datasets.ImageFolder('preprocessed/patches/train', transform=t)
+val_set = datasets.ImageFolder('preprocessed/patches/val', transform=t)
                     
 
 train_loader = DataLoader(train_set, batch_size=BATCH_SIZE, num_workers=4, sampler=ImbalancedDatasetSampler(train_set))

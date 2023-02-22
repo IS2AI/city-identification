@@ -68,8 +68,8 @@ def make_patches(image_path, patch_dim, stride, save_dir):
         j = 0
         i += stride
 
-SET = 'v9_240'
-ROOT = 'workspace/dataset'
+SET = 'patches'
+ROOT = 'preprocessed'
 CITIES = os.listdir(os.path.join(ROOT, 'raw'))
 CITIES.remove('.ipynb_checkpoints')
 

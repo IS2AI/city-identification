@@ -52,7 +52,7 @@ EPOCHS = 50
 # In[4]:
 
 
-df = pd.read_csv('workspace/dataset/sustainability_index.csv', index_col='city')
+df = pd.read_csv('city_indexes/sustainability_index.csv', index_col='city')
 #df['city'] = df['city'].str.extract(r"\(([A-Za-z]+)\)", expand=False)
 df['overall'] /= 100
 scores = df['overall'].dropna().to_dict()
@@ -110,8 +110,8 @@ t = transforms.Compose([
 # In[7]:
 
 
-train_paths = list(paths.list_files('workspace/dataset/reg_240/train', validExts='jpg'))
-val_paths = list(paths.list_files('workspace/dataset/reg_240/val', validExts='jpg'))
+train_paths = list(paths.list_files('preprocessed/patches/train', validExts='jpg'))
+val_paths = list(paths.list_files('preprocessed/patches/val', validExts='jpg'))
 random.shuffle(train_paths)
 random.shuffle(val_paths)
 
@@ -165,34 +165,16 @@ class net(nn.Module):
 
 # initialize the ResNet model
 print("[INFO] initializing the ResNet model...")
-# model = models.resnet50(pretrained=False)
-# resnet = torch.load('models/resnet34_pre_38_4/model_37.pth')
 model = torch.load('models/resnet50_v3/model_80.pth')
 
-# for param in resnet.parameters():
-#     param.requires_grad = False
     
 model.module.fc = nn.Linear(model.module.fc.in_features, 1)
-# net_add=net()
-# model = nn.Sequential(resnet, net_add)
-#model = nn.DataParallel(init_model, device_ids=[7,8])
 model = model.to(device)
 
 
 # initialize our optimizer and loss function
 opt = torch.optim.Adam(model.parameters(), lr=INIT_LR)
-# scheduler = torch.optim.lr_scheduler.StepLR(opt, step_size=5, gamma=0.1)
-# scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(opt, 'min')
 lossFn = nn.MSELoss()
-
-
-# In[16]:
-
-
-model
-
-
-# In[ ]:
 
 
 NAME = 'resnet50_reg_overall'
@@ -282,15 +264,6 @@ for e in range(0, EPOCHS):
     
     # serialize the model to disk
     torch.save(model, 'models/{}/model_{}.pth'.format(NAME, e + 1))
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 

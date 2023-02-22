@@ -25,7 +25,7 @@ t = transforms.Compose([
         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
     ])
 
-test_set = datasets.ImageFolder('workspace/dataset/v9_240/test_b', transform=t)
+test_set = datasets.ImageFolder('preprocessed/patches/test_b', transform=t)
 test_loader = DataLoader(test_set, batch_size=256, num_workers=4, shuffle=False)
 
 
