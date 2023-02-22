@@ -46,7 +46,7 @@ python3 test_regression.py
 
 # Sustainability map creation
 
-To create sustainability color map, there is a available another script:
+To create sustainability color map, there is available another script:
 
 ```
 python3 make_sustainability_map.py
