@@ -1,6 +1,7 @@
 # City similarity
 
-![image](https://github.com/IS2AI/city-similarity/assets/5821328/7e4086ea-3af9-4458-a723-23816f2fc0af)
+![image](https://github.com/IS2AI/city-similarity/assets/5821328/330f7d3d-e5a5-4f42-8631-e3bf837bd8df)
+
 
 
 
