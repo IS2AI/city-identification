@@ -40,3 +40,7 @@ For testing out city classificaiton model performance on unseen patches run:
 ```
 python3 test_classification.py
 ```
+
+# Saliency maps
+
+Salient features of each city is vizualized via depth-wise heatmaps and masked images, full set of saliency maps for pre-processed sattelite patches is available [here](https://drive.google.com/drive/folders/1ryIsorRSUBuroRSG3gmCJCwrGWvK6uxQ?usp=sharing)
