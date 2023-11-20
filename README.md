@@ -1,4 +1,4 @@
-# City similarity
+# Deep learning-based identification of similar cities using satellite images
 
 ![image](https://github.com/IS2AI/city-similarity/assets/5821328/330f7d3d-e5a5-4f42-8631-e3bf837bd8df)
 
