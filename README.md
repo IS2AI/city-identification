@@ -16,7 +16,7 @@ Dataset consists of 45 cities from various locations, and mostly chosen from [Ar
 $ git clone https://github.com/IS2AI/city-classification-and-index-prediction
 ```
 
-# Pre-processing 
+# Data pre-processing 
 
 Prior to training it is necessary to perform pre-processing on raw images. To generate patches out of raw images needed for training, and to perform train-val-test split launch the following script:
 
@@ -24,14 +24,14 @@ Prior to training it is necessary to perform pre-processing on raw images. To ge
 python3 preprocessing.py
 ```
 
-# Training
+# City Identification Model: Training
 
 To launch training for city classification use the following script:
 ```
 python3 train_classification.py
 ```
 
-# Inference
+# City Identification Model: Inference
 
 For testing out city classificaiton model performance on unseen patches run:
 ```
