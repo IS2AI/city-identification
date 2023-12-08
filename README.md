@@ -1,7 +1,7 @@
 # Deep learning-based identification of similar cities using satellite images
 
 ![image](https://github.com/IS2AI/city-similarity/assets/5821328/330f7d3d-e5a5-4f42-8631-e3bf837bd8df)
-<h6 align="center"> Figure 1: Cities represented by their International Air Transport Association (IATA) codes and corresponding raw sattelite views from one of the sites used for dataset and respective city identification model </h6>
+<h6 align="center"> Figure 1: Cities represented by their International Air Transport Association (IATA) codes and corresponding raw sattelite views from one of the sites. Raw site images are part of the dataset and were used for city identification model training. </h6>
 
 This repository contains codes and data for performing city classification task.
 
