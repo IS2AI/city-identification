@@ -25,6 +25,7 @@ Prior to training it is necessary to perform pre-processing on raw images. To ge
 ```
 python3 preprocessing.py
 ```
+Raw images are of 4800 x 4800 pixels resolution. To capture more specific pre-proceesed images of size 480 × 480 resolution (which corresponds to 200 m by 200 m area) and with an overlap of 240 pixels are generated.
 
 # City Identification Model: Training
 
