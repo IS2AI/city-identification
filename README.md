@@ -42,4 +42,4 @@ python3 test_classification.py
 
 # Class Activation Maps
 
-Salient features of each city is vizualized via depth-wise heatmaps and masked images, full set of saliency maps for pre-processed sattelite patches is available [here](https://drive.google.com/drive/folders/1ryIsorRSUBuroRSG3gmCJCwrGWvK6uxQ?usp=sharing)
+We forked Relevance-CAM from [this](https://github.com/mongeoroo/Relevance-CAM) repo. Modified it under our model and produced the Saliency maps for 10 random patches for each city. Salient features of each city is vizualized via depth-wise heatmaps and masked images, full set of saliency maps for pre-processed sattelite patches is available [here](https://drive.google.com/drive/folders/1ryIsorRSUBuroRSG3gmCJCwrGWvK6uxQ?usp=sharing)
