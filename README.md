@@ -9,8 +9,8 @@ Published Paper is [here](https://www.mdpi.com/2682968).
 
 # Access
 
-Raw data, processed dataset can be downloaded from our Hugging Face: https://huggingface.co/datasets/issai/DL-SLICER-dataset
-Alternatively, models only can be accessed at [this google drive link](https://drive.google.com/drive/folders/1-7C7YY3ejCsLZlXKM5o0E8kT5IY2ROyK?usp=sharing).
+- Raw data, processed dataset can be downloaded from our Hugging Face: https://huggingface.co/datasets/issai/DL-SLICER-dataset
+- Models can be accessed at [this google drive link](https://drive.google.com/drive/folders/1-7C7YY3ejCsLZlXKM5o0E8kT5IY2ROyK?usp=sharing).
 
 Dataset consists of 45 cities from various locations, and mostly chosen from [Arcadis Index 2022](https://www.arcadis.com/en/knowledge-hub/perspectives/global/sustainable-cities-index). Additional 8 cities (Almaty, Ankara, Ashgabat, Astana, Baku, Bishkek, Shymkent, and Tashkent) underrepresented in Arcadis Index is also part of the dataset.
 
