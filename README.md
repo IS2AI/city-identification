@@ -5,6 +5,8 @@
 
 This repository contains codes and data for performing city classification task. Original dataset contains raw 1585 images of 4800 x 4800 resolution (16 GB). 
 
+Link to the dataset [here](https://www.mdpi.com/2682968)
+
 # Access
 
 Raw data, processed dataset can be downloaded from our Hugging Face: https://huggingface.co/datasets/issai/DL-SLICER-dataset
