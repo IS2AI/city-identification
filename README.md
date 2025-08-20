@@ -5,7 +5,7 @@
 
 This repository contains codes and data for performing city classification task. Original dataset contains raw 1585 images of 4800 x 4800 resolution (16 GB). 
 
-Link to the paper is [here](https://www.mdpi.com/2682968).
+Published Paper is [here](https://www.mdpi.com/2682968).
 
 # Access
 
