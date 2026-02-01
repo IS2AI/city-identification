@@ -1,6 +1,7 @@
 # DL-SLICER: Deep Learning for Satellite-Based Identification of Cities with Enhanced Resemblance
 
-![image](https://github.com/IS2AI/city-similarity/assets/5821328/330f7d3d-e5a5-4f42-8631-e3bf837bd8df)
+![COVER_DL_SLICER_IATA 001](https://github.com/user-attachments/assets/db433850-dfad-49a6-b508-b231da0d7d51)
+
 <h6 align="center"> Figure 1: Cities represented by their International Air Transport Association (IATA) codes and corresponding raw sattelite views from one of the sites. Raw site images are part of the dataset and were used for city identification model training. </h6>
 
 This repository contains codes and data for performing city classification task. Original dataset contains raw 1585 images of 4800 x 4800 resolution (16 GB). 
